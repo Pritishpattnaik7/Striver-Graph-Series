@@ -38,6 +38,9 @@ int main(){
         adj[u].push_back(v);
         adj[v].push_back(u);
     }
-
-
+    
+    if (isCycle(n, adj)){
+        cout << "Cycle is Present\n";
+    }
+    else cout << "Cycle not present\n";
 }
